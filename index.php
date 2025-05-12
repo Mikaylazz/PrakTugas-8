@@ -21,7 +21,7 @@ $result = mysqli_query($db->conn, $query);
         </tr>
         <?php while ($row = mysqli_fetch_assoc($result)) { ?>
             <tr>
-                <td><?= $row['id'] ?></td>
+                <td><?= $row['id_merk'] ?></td>
                 <td><?= $row['nama_merk'] ?></td>
             </tr>
         <?php } ?>
