@@ -14,10 +14,17 @@ $result = mysqli_query($db->conn, $query);
 </head>
 <body>
     <h1>Merk Kosmetik</h1>
-    <ul>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nama Merk</th>
+        </tr>
         <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-            <li><?= $row['nama_merk'] ?></li>
+            <tr>
+                <td><?= $row['id'] ?></td>
+                <td><?= $row['nama_merk'] ?></td>
+            </tr>
         <?php } ?>
-    </ul>
+    </table>
 </body>
 </html>
